@@ -39,6 +39,8 @@ tr:nth-child(even) {
     <th>object</th>
     <th>array</th>
     <th>tuple</th>
+    <th>enum</th>
+    <th>any</th>
 
   </tr>
   <tr>
@@ -48,6 +50,8 @@ tr:nth-child(even) {
     <td>{age: 30}</td>
     <td>[1, 2]</td>
     <td>[1, 2]</td>
+    <td>enum {NEW, OLD}</td>
+    <td>*</td>
   </tr>
   <tr>
     <td>All numbers, no differentiation between integers or floats</td>
@@ -56,6 +60,8 @@ tr:nth-child(even) {
     <td>Any Javascript object, more specific types (type of object) are possible</td>
     <td>Any Javascript array, type can be flexible or strict depending on the element types</td>
     <td>Added by typescript: fixed-length array</td>
+    <td>Added by typescript: automatically enumerated global constant identifiers</td>
+    <td>Any kind of value, no specific type assignment</td>
   </tr>
 </table>
 
