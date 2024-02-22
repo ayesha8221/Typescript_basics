@@ -1,10 +1,17 @@
-// console.log('Your code goes here .. Ayesha');
-function add(n1: number, n2: number) {
-    return n1 + n2;
+const person = {
+    name: 'Ayesha',
+    age: 24,
+    hobbies: ['archery', 'horse-riding']
+};
+
+let favouriteActivities: any[];
+favouriteActivities = ['horse-riding']
+
+console.log(person.name);
+
+for (const hobby of person.hobbies) {
+    console.log(hobby.toUpperCase()); //can add built-ins because type string
+    // console.log(hobby.map()); will complain because a string type
 }
 
-const number1 = '5';
-const number2 = 2.8;
-
-const result = add(number1, number2);
-console.log(result);
+console.log(person.name)

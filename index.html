@@ -5,7 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Understanding Typescript</title>
 </head>
+<style>
+body {
+        background-color: rgb(255, 255, 255);
+}
+h1 {
+    color: #d48caa;
+}
+    table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #e3a9d3;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2dae4;
+}
+</style>
 <body>
+    <h1>Core Types</h1>
+
+<table>
+  <tr>
+    <th>number</th>
+    <th>string</th>
+    <th>boolean</th>
+    <th>object</th>
+    <th>array</th>
+    <th>tuple</th>
+
+  </tr>
+  <tr>
+    <td>1, 5.3, -10</td>
+    <td>'hi', "hi", `hi`</td>
+    <td>true, false</td>
+    <td>{age: 30}</td>
+    <td>[1, 2]</td>
+    <td>[1, 2]</td>
+  </tr>
+  <tr>
+    <td>All numbers, no differentiation between integers or floats</td>
+    <td>All text values</td>
+    <td>Just these two, no "truthy" or "falsy" values</td>
+    <td>Any Javascript object, more specific types (type of object) are possible</td>
+    <td>Any Javascript array, type can be flexible or strict depending on the element types</td>
+    <td>Added by typescript: fixed-length array</td>
+  </tr>
+</table>
+
+
     <script src="app.js" defer></script>
 </body>
 </html>
