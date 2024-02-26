@@ -65,6 +65,136 @@ tr:nth-child(even) {
   </tr>
 </table>
 
+<h3>Typescript basics</h3>
+
+<h4>function return types</h4>
+<ul>
+  <li>the void return statement means the function does not have a return statement. it does not return anything and will yield undefined</li>
+  <li>undefined is a type in typescript and will therefore not throw an error however use "void" </li>
+</ul>
+
+<h4>functions as types</h4>
+<ul>
+  <li>types that describe a function regarding the parameters and the return value</li>
+  <li>it is created with an arrow function "=>" but no curly braces eg. let combineValues: () => ;</li>
+  <li>the parameters are not variable names but their types eg. let combineValues: (a: number, b: number) => number;</li>
+  <li>allow us to describe which type of function we specifically want to use somewhere</li>
+</ul>
+
+<h4>function types and callbacks</h4>
+<ul>
+  <li>callback is a function passed in as a parameter that should do something with the result</li>
+  <li>void also means that it will ignore any return even if return is specified in a callback function</li>
+</ul>
+
+<h4>the unknown type</h4>
+<ul>
+  <li>the unknown type allows you to store any type in there with no errors but more restrictive than :any</li>
+</ul>
+
+<h4>the never type</h4>
+<ul>
+  <li>never returns - more strict than void</li>
+</ul>
+
+<!-- section 3 -->
+<h3>The Typescript compiler</h3>
+
+<h4>Watch mode</h4>
+<ul>
+  <li> tsc <'filename'> --watch or -w automatically recompiles file</li>
+</ul>
+
+<h4>Compiling the entire project</h4>
+<ul>
+  <li>compiling multiple files - navigate into folder and tsc --init and will run the whole folder and then tsc and can combine with watch mode</li>
+</ul>
+
+<h4>including and excluding files</h4>
+<ul>
+  <li>tsconfig.json tells typescript how to compile these files</li>
+  <li>in tsconfig.json can inculde an exclude array with files you do not want to execute</li>
+  <li>the reverse happens with include array</li>
+  <li>also files array for files only to compile</li>
+
+</ul>
+
+<h4>setting a compilation target</h4>
+<ul>
+  <li>control space and pick your target compiler es6</li>
+  <li>core types - union aliases</li>
+</ul>
+
+
+<h4>understanding typescript core libs</h4>
+<ul>
+  <li>core types - union aliases</li>
+  <li>core types - union aliases</li>
+</ul>
+
+
+<h4>more config and compilation options</h4>
+<ul>
+  <li>core types - union aliases</li>
+  <li>core types - union aliases</li>
+</ul>
+
+<h4>working with source maps</h4>
+<ul>
+  <li>in tsconfig.json if you set sourcemap to true you will compile .js.map files and acts as a bridge and can be accessed in the browser</li>
+  <li>simplifies debugging because you are able to do it in the browser</li>
+</ul>
+
+<h4>rootDir and outDir</h4>
+<ul>
+  <li>outDir should be where your output (js) files should be ./dist </li>
+  <li>rootDir should be your input files ./src</li>
+  <li>specified in tsconfig.json</li>
+
+</ul>
+
+<h4>stop emitting files on compilation errors</h4>
+<ul>
+  <li>if typescript does not recognise something from the lib and noEmitOnError is set to false and you will be able to run problematic js files</li>
+  <li>set it to true and it will complain</li>
+</ul>
+
+<h4>strict compilation</h4>
+<ul>
+  <li>setting strict to true in tsconfig will create errors if types are not specified and will not compile at runtime</li>
+  <li>core types - union aliases</li>
+</ul>
+
+<h4>code quality</h4>
+<ul>
+  <li>typescript will complain if you have unused code</li>
+  <li>core types - union aliases</li>
+</ul>
+
+<h4>debugging with vs code</h4>
+<ul>
+  <li>core types - union aliases</li>
+  <li>core types - union aliases</li>
+</ul>
+
+<h4>wrap up</h4>
+<ul>
+  <li>core types - union aliases</li>
+  <li>core types - union aliases</li>
+</ul>
+
+<h4>wrap up</h4>
+<ul>
+  <li>core types - union aliases</li>
+  <li>core types - union aliases</li>
+</ul>
+
+<h4>things I need to review</h4>
+<ul>
+  <li>core types - union aliases</li>
+  <li>core types - union aliases</li>
+</ul>
+
 
     <script src="app.js" defer></script>
 </body>
